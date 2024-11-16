@@ -19,9 +19,12 @@ class Route:
 
     def visited_all(self, points):
         for p in points:
-            if p not in self.points:
+            if not self.visited(p):
                 return False
         return True
     
+    def visited(self, point):
+        return point in self.points
+
     def final(self):
         return self.steps[-1]
