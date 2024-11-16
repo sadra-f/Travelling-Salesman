@@ -1,7 +1,7 @@
 # Traveling Salesman Problem
 ###### An attemp to solve the Traveling Salesman problem using Brute Force.
 
-the algorithm uses BFS at every step and creates a new route from the neighboring nodes/points of the current node/point.
+The algorithm uses BFS at every step and creates a new route from the neighboring nodes/points of the current node/point.
 
 #### Example : 
 ![img](example.png)
