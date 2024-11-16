@@ -19,7 +19,7 @@ class Point:
     def neighbor_dist(self, point):
         for i in self.neighbors_distances:
             if i.neighbor == point:
-                return i.distance
+                return i.dist
         raise ValueError("point is not in neighbors list")
 
     def neighbor_dist_tuple(self):
@@ -34,10 +34,18 @@ class Point:
     def __eq__(self, value: object) -> bool:
         if isinstance(value, Point) :
             res = 0
-            res += 1 if self._id == value._id else 0
+            res = 1 if self._id == value._id else 0
             for i in self.neighbors_distances:
                 if i not in value.neighbors_distances:
                     res -= 1
                     break
-            return res == 2
+            return res == 1
         return False
+
+
+    def __str__(self) -> str:
+        return self.str_rep
+    
+
+    def __repr__(self) -> str:
+        return self.__str__()
