@@ -1,7 +1,7 @@
 from Models.Point import Point
 from Models.Route import Route
 
-class BFS:
+class TravelingSalesman:
     def __init__(self, points):
         self.points = points
         self.routes = {p : [] for p in self.points}
