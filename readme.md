@@ -7,7 +7,7 @@ the algorithm uses BFS at every step and creates a new route from the neighborin
 ![img](example.png)
 
 #### Result :
-
+<pre>
 A : No Hamiltonian Path Found
 B : No Hamiltonian Path Found
 C : No Hamiltonian Path Found
