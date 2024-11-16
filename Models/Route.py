@@ -12,19 +12,19 @@ class Route:
         self.steps.append(PD(self.start, point, self.points[-1].neighbor_dist(point)))
         self.points.append(point)
 
-    def copy(self):
+    def copy(self) -> Route:
         res = Route(self.start)
         res.steps = list(self.steps)
         return res
 
-    def visited_all(self, points):
+    def visited_all(self, points) -> bool:
         for p in points:
             if not self.visited(p):
                 return False
         return True
     
-    def visited(self, point):
+    def visited(self, point) -> bool:
         return point in self.points
 
-    def final(self):
+    def final(self) -> Point:
         return self.steps[-1]
