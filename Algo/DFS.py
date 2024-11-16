@@ -1,16 +1,17 @@
 from Models.Point import Point
 from Models.Route import Route
 
-class DFS:
+class BFS:
     def __init__(self, points):
         self.points = points
-        self.routes = []
+        self.routes = {p : [] for p in self.points}
+        self.best_routes = {p : Route(p) for p in self.points}
 
     def run(self):
         pass
 
 
-    def dfs(self, start:Point):
+    def bfs(self, start:Point):
         #use BFS instead of DFS (use queue) make a new route for each neighbor newly visited keep the visited nodes in the route
         routes = []
         queue = [Route(start)]
