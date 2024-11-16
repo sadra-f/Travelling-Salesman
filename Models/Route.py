@@ -27,6 +27,9 @@ class Route:
     def visited(self, point) -> bool:
         return point in self.points
 
+    def total_distance(self):
+        return sum(self.steps)
+
     def final(self) -> Point:
         return self.points[-1]
     
