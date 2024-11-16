@@ -15,5 +15,5 @@ D : No Hamiltonian Path Found
 E : No Hamiltonian Path Found
 F : [F, B, A, E, C, D, G] => len = 27.5
 G : [G, D, A, E, C, B, F] => len = 27.5
-
+</pre>
 No virtual environment used hence no requirements.txt file.
