@@ -8,7 +8,6 @@ class Point:
         Point.id += 1
         self.neighbors_distances = []
         self.neighbors = []
-        self.visited = False
 
 
     def add_neighbor(self, point, dist):
@@ -24,12 +23,6 @@ class Point:
 
     def neighbor_dist_tuple(self):
         return [(i.neighbor, i.dist) for i in self.neighbors_distances]
-    
-    def reset_visit(self):
-        self.visited = False
-
-    def visit(self):
-        self.visited = True
 
     def __eq__(self, value: object) -> bool:
         if isinstance(value, Point) :
