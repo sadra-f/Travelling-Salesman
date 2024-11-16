@@ -1,5 +1,5 @@
-from Models.PD import PointDistance as PD
 from Models.Point import Point
+
 class Route:
     def __init__(self, start:Point):
         self.start = start
